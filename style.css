@@ -1,43 +1,56 @@
 body {
-
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
-
 #website {
-
     max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+margin: 0 auto;
+    font-family: Arial;
 }
 
 #header {
-display: grid;
-grid-template-columns: 1fr 3fr;
+    display: grid;
+    grid-template-columns: auto 1fr;
+header {
+    display: flex;
+    justify-content: space-between;
 align-items: center;
-background-color: beige;
-
+    background-color: #ddd;
+    color: black;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .logo {
-border: 1px solid blue;
-color: rgb(114, 72, 17);
-text-decoration: none;
-
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
 }
 
-.menu{
 
-    border: 1px solid red;
+.menu {
     text-align: right;
 }
 
 .menu li {
-      display: inline-block;
-      padding: 5px;
+    display: inline-block;
+    padding: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .menu li a {
-
-    color: rgb(255, 0, 0);
+    color: black;
     text-decoration: none;
+.logo img {
+    width: 240px;
+}
+
+.baner {
+    background-color: red;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
