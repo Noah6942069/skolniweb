@@ -3,30 +3,41 @@
     margin: 0 auto;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 1px solid #CCC;
+    padding-bottom: 50x;
 }
 
 .logo img {
-    max-width: 240px;
+    max-width: 100px;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; 
     display: flex;
     gap: 20px;
 }
 
 .baner {
-    width: 100%;
-    height: 500px;
-    background-image: url('banerbg.jpg');
-    background-size: cover;
-    background-position: center;
+     
+        width: 100%;
+        height: 500px;
+        background-image: url('banner.jpg');
+        background-size: 100%;
+        background-position: 60% 120%;
+        
+     
+    
+    
 }
 
 .baner-text {
@@ -34,8 +45,9 @@ nav ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(251, 251, 251);
     text-align: center;
+    
 }
 
 .baner-text h1 {
@@ -46,3 +58,4 @@ nav ul {
 .baner-text p {
     font-size: 24px;
 }
+
