@@ -14,54 +14,114 @@
             </div>
             <nav>
                 <ul class="menu">
-                    <li><a href="logo2.png">Úvod</a></li>
+                    <li><a href="#">Úvod</a></li>
                     <li><a href="#">Služby</a></li>
                     <li><a href="#">Ceník</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
 
     <section class="banner">
-
         <div class="banner-text">
             <h1>Profesionální IT služby za férovou cenu</h1>
-            <p>Nabízíme grafický design,
-                 střih videí a další služby za dostupné ceny.</p>
+            <p>Nabízíme grafický design, střih videí a další služby za dostupné ceny.</p>
             <a href="#" class="btn">Zjistit více</a>
         </div>
-
     </section>
-<section class="služby">
+
+    <section class="služby">
         <div class="pepp">
-            <h2>Naše služby</h2>    
+            
             <div class="služby-grid">
                 <div class="služby-zbozi">
                     <h3>cloudové aplikace</h3>
                     <p>Cloudové aplikace jsou přesně tím</p>
                     <p>co moderní podnikání vyžaduje.</p>
+                    <div class = "cenovka">
 
+                <b>
+                    <span class="cenap">
+                        <span>od</span>
+                        </span>
+                    <span>8000</span>
+
+                    <span class="cenap">
+                    <span>kč</span>
+                </b>
+                </span>
+                    </div>
+                    <a href="#" class="btn2">Koupit</a>
+                    <div class="poplatky">
+                    <p>bez skrytých poplatků</p>
+                </div>
                 </div>
                 <div class="služby-zbozi">
                     <h3>Střih videí a reklam</h3>
                     <p>Profesionální úpravy a efekty.</p>
                     <p>Vytváříme moderní a responzivní weby.</p>
+                    <div class = "cenovka">
+                        <b>
+                            <span class="cenap">
+                                <span>od</span>
+                                </span>
+                            <span>5000</span>
+        
+                            <span class="cenap">
+                            <span>kč</span>
+                        </b>
+                        </span>
+                        </div>
+                        <a href="#" class="btn2">Koupit</a>
+                        <div class="poplatky">
+                            <p>bez skrytých poplatků</p>
+                        </div>
                 </div>
                 <div class="služby-zbozi">
                     <h3>Webové stránky</h3>
-                    <p>Vytváříme moderní a responzivní weby.</p>
+                    <p>Vytváříme moderní a responzivní weby</p>
+                    <p>pro začínajíci firmy a lidi</p>
+                    <div class = "cenovka">
+                        <b>
+                            <span class="cenap">
+                                <span>od</span>
+                                </span>
+                            <span>7000</span>
+        
+                            <span class="cenap">
+                            <span>kč</span>
+                        </b>
+                        </span>
+                    </div>
+                        <a href="#" class="btn2">Koupit</a>
+                        <div class="poplatky">
+                            <p>bez skrytých poplatků</p>
+                        </div>
                 </div>
                 <div class="služby-zbozi">
                     <h3>Branding</h3>
                     <p>Pomůžeme vám s vizuální identitou.</p>
+                    <div class = "cenovka">
+                        <b>
+                            <span class="cenap">
+                                <span>od</span>
+                                </span>
+                            <span>3000</span>
+        
+                            <span class="cenap">
+                            <span>kč</span>
+                        </b>
+                        </span>
+                        </div>
+                        <a href="#" class="btn2">Koupit</a>
+                        <div class="poplatky">
+                            <p>bez skrytých poplatků</p>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
-
-    
     <div class="container">
         <div class="section">
             <div class="text">
@@ -72,7 +132,7 @@
                 <img src="edit.webp" alt="Illustration">
             </div>
         </div>
-        
+
         <div class="section">
             <div class="image">
                 <img src="webpic.jpeg" alt="Illustration">
@@ -82,7 +142,7 @@
                 <p>Naše videa jsou profesionální, přehledná a přizpůsobená vašim potřebám.</p>
             </div>
         </div>
-        
+
         <div class="section">
             <div class="text">
                 <h2>Bez starostí</h2>
@@ -95,7 +155,32 @@
     </div>
 
     <footer>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d462.11857933645115!2d17.470123108722955!3d49.065021939378845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47131448ae70abf7%3A0x9240f0d4c6ae!2sLechova%20690%2C%20686%2001%20Uherské%20Hradiště%201!5e0!3m2!1scs!2scz!4v1741180472523!5m2!1scs!2scz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <script>
+        const themeSwitch = document.querySelector('.theme-switch');
+
+        themeSwitch.addEventListener('click', () => {
+
+            //když má tlačítko třídu dark, tak ji odebereme a naopak
+            if (themeSwitch.classList.contains('dark')) {
+
+                themeSwitch.classList.remove('dark');
+                document.body.classList.remove('dark-theme');
+
+            } else {
+
+                themeSwitch.classList.add('dark');
+                document.body.classList.add('dark-theme');
+
+            }
+
+        });
+
+</script>
         <p>&copy; 2025 Flick</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
