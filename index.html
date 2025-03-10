@@ -3,184 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flick</title>
+    <title>Flick | IT Služby a Webdesign</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Profesionální IT služby, webdesign, grafický design a střih videí za férové ceny.">
 </head>
 <body>
-    <header>
-        <div class="pepp">
+    <header id="navbar">
+        <div class="container-header">
             <div class="logo">
-                <img src="logo2.png" alt="Logo firmy">
+                <img src="logo2.png" alt="Flick - Logo firmy">
             </div>
             <nav>
                 <ul class="menu">
-                    <li><a href="#">Úvod</a></li>
-                    <li><a href="#">Služby</a></li>
-                    <li><a href="#">Ceník</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#home">Úvod</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#benefits">Výhody</a></li>
+                    <li><a href="#testimonials">Reference</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><button class="theme-switch" aria-label="Přepnout tmavý režim"><i class="fas fa-moon"></i></button></li>
                 </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="banner-text">
             <h1>Profesionální IT služby za férovou cenu</h1>
-            <p>Nabízíme grafický design, střih videí a další služby za dostupné ceny.</p>
-            <a href="#" class="btn">Zjistit více</a>
+            <p>Nabízíme grafický design, střih videí a moderní webová řešení pro vaše podnikání.</p>
+            <div class="banner-buttons">
+                <a href="#services" class="btn primary-btn">Naše služby</a>
+                <a href="#contact" class="btn secondary-btn">Kontaktujte nás</a>
+            </div>
         </div>
     </section>
 
-    <section class="služby">
-        <div class="pepp">
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Naše služby</h2>
+                <p>Komplexní IT řešení pro váš úspěch</p>
+            </div>
             
-            <div class="služby-grid">
-                <div class="služby-zbozi">
-                    <h3>cloudové aplikace</h3>
-                    <p>Cloudové aplikace jsou přesně tím</p>
-                    <p>co moderní podnikání vyžaduje.</p>
-                    <div class = "cenovka">
-
-                <b>
-                    <span class="cenap">
-                        <span>od</span>
-                        </span>
-                    <span>8000</span>
-
-                    <span class="cenap">
-                    <span>kč</span>
-                </b>
-                </span>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
                     </div>
-                    <a href="#" class="btn2">Koupit</a>
-                    <div class="poplatky">
-                    <p>bez skrytých poplatků</p>
+                    <h3>Cloudové aplikace</h3>
+                    <p>Cloudové aplikace jsou přesně tím, co moderní podnikání vyžaduje.</p>
+                    <div class="price">
+                        <span class="price-label">od</span>
+                        <span class="price-amount">8 000</span>
+                        <span class="price-currency">Kč</span>
+                    </div>
+                    <a href="#contact" class="btn service-btn">Objednat</a>
+                    <div class="no-fees">
+                        <p>bez skrytých poplatků</p>
+                    </div>
                 </div>
-                </div>
-                <div class="služby-zbozi">
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
                     <h3>Střih videí a reklam</h3>
-                    <p>Profesionální úpravy a efekty.</p>
-                    <p>Vytváříme moderní a responzivní weby.</p>
-                    <div class = "cenovka">
-                        <b>
-                            <span class="cenap">
-                                <span>od</span>
-                                </span>
-                            <span>5000</span>
-        
-                            <span class="cenap">
-                            <span>kč</span>
-                        </b>
-                        </span>
-                        </div>
-                        <a href="#" class="btn2">Koupit</a>
-                        <div class="poplatky">
-                            <p>bez skrytých poplatků</p>
-                        </div>
-                </div>
-                <div class="služby-zbozi">
-                    <h3>Webové stránky</h3>
-                    <p>Vytváříme moderní a responzivní weby</p>
-                    <p>pro začínajíci firmy a lidi</p>
-                    <div class = "cenovka">
-                        <b>
-                            <span class="cenap">
-                                <span>od</span>
-                                </span>
-                            <span>7000</span>
-        
-                            <span class="cenap">
-                            <span>kč</span>
-                        </b>
-                        </span>
+                    <p>Profesionální úpravy a efekty, které zaujmou vaše zákazníky.</p>
+                    <div class="price">
+                        <span class="price-label">od</span>
+                        <span class="price-amount">5 000</span>
+                        <span class="price-currency">Kč</span>
                     </div>
-                        <a href="#" class="btn2">Koupit</a>
-                        <div class="poplatky">
-                            <p>bez skrytých poplatků</p>
-                        </div>
+                    <a href="#contact" class="btn service-btn">Objednat</a>
+                    <div class="no-fees">
+                        <p>bez skrytých poplatků</p>
+                    </div>
                 </div>
-                <div class="služby-zbozi">
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Webové stránky</h3>
+                    <p>Vytváříme moderní a responzivní weby pro začínající firmy i jednotlivce.</p>
+                    <div class="price">
+                        <span class="price-label">od</span>
+                        <span class="price-amount">7 000</span>
+                        <span class="price-currency">Kč</span>
+                    </div>
+                    <a href="#contact" class="btn service-btn">Objednat</a>
+                    <div class="no-fees">
+                        <p>bez skrytých poplatků</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
                     <h3>Branding</h3>
-                    <p>Pomůžeme vám s vizuální identitou.</p>
-                    <div class = "cenovka">
-                        <b>
-                            <span class="cenap">
-                                <span>od</span>
-                                </span>
-                            <span>3000</span>
-        
-                            <span class="cenap">
-                            <span>kč</span>
-                        </b>
-                        </span>
-                        </div>
-                        <a href="#" class="btn2">Koupit</a>
-                        <div class="poplatky">
-                            <p>bez skrytých poplatků</p>
-                        </div>
+                    <p>Pomůžeme vám s vizuální identitou, která posílí vaši značku na trhu.</p>
+                    <div class="price">
+                        <span class="price-label">od</span>
+                        <span class="price-amount">3 000</span>
+                        <span class="price-currency">Kč</span>
+                    </div>
+                    <a href="#contact" class="btn service-btn">Objednat</a>
+                    <div class="no-fees">
+                        <p>bez skrytých poplatků</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="section">
-            <div class="text">
-                <h2>Rychlé dodání</h2>
-                <p>První návrh dostanete už za 1-3 dny. Revize zvládneme do 24 hodin.</p>
-            </div>
-            <div class="image">
-                <img src="edit.webp" alt="Illustration">
-            </div>
-        </div>
 
-        <div class="section">
-            <div class="image">
-                <img src="webpic.jpeg" alt="Illustration">
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proč si vybrat nás?</h2>
+                <p>Spolehlivý partner pro váš digitální růst</p>
             </div>
-            <div class="text">
-                <h2>Kvalitní práce</h2>
-                <p>Naše videa jsou profesionální, přehledná a přizpůsobená vašim potřebám.</p>
-            </div>
-        </div>
 
-        <div class="section">
-            <div class="text">
-                <h2>Bez starostí</h2>
-                <p>O vše se postaráme. Vy se můžete soustředit na svůj byznys.</p>
+            <div class="benefit-row">
+                <div class="benefit-text">
+                    <h3>Rychlé dodání</h3>
+                    <p>První návrh dostanete už za 1-3 dny. Revize zvládneme do 24 hodin. Čas je důležitý a my si to uvědomujeme.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Express dodání</li>
+                        <li><i class="fas fa-check"></i> Rychlé revize a úpravy</li>
+                        <li><i class="fas fa-check"></i> Flexibilní termíny</li>
+                    </ul>
+                </div>
+                <div class="benefit-image">
+                    <img src="edit.webp" alt="Rychlé dodání">
+                </div>
             </div>
-            <div class="image">
-                <img src="banner.webp" alt="Illustration">
+
+            <div class="benefit-row reverse">
+                <div class="benefit-image">
+                    <img src="webpic.jpeg" alt="Kvalitní práce">
+                </div>
+                <div class="benefit-text">
+                    <h3>Kvalitní práce</h3>
+                    <p>Naše služby jsou profesionální, přehledné a přizpůsobené vašim specifickým potřebám a cílům.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Moderní technologie</li>
+                        <li><i class="fas fa-check"></i> Zkušený tým odborníků</li>
+                        <li><i class="fas fa-check"></i> Důraz na detail</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="benefit-row">
+                <div class="benefit-text">
+                    <h3>Bez starostí</h3>
+                    <p>O vše se postaráme. Vy se můžete soustředit na svůj byznys, zatímco my se staráme o technické detaily.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> Komplexní řešení</li>
+                        <li><i class="fas fa-check"></i> Technická podpora</li>
+                        <li><i class="fas fa-check"></i> Servis a údržba</li>
+                    </ul>
+                </div>
+                <div class="benefit-image">
+                    <img src="banner.webp" alt="Bezstarostný servis">
+                </div>
             </div>
         </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jak probíhá spolupráce</h2>
+                <p>Jednoduchý a efektivní proces</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Konzultace</h3>
+                    <p>Zjistíme vaše potřeby a očekávání</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h3>Návrh řešení</h3>
+                    <p>Připravíme koncept na míru</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-code"></i></div>
+                    <h3>Realizace</h3>
+                    <p>Vytvoříme hotový produkt</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Spuštění</h3>
+                    <p>Předání a uvedení do provozu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reference</h2>
+                <p>Co o nás říkají naši klienti</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                        <p>Flick nám vytvořil skvělé webové stránky, které předčily naše očekávání. Profesionální přístup, rychlé dodání a výborná komunikace.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Jan Novák</div>
+                        <div class="author-company">Novák & Partners</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                        <p>Brandingové služby od Flick nám pomohly odlišit se od konkurence. Kreativní nápady a kvalitní realizace za rozumnou cenu.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Marie Svobodová</div>
+                        <div class="author-company">MS Studio</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                        <p>Vynikající spolupráce při vytváření naší cloudové aplikace. Tým Flick je spolehlivý a vždy nabízí inovativní řešení.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Petr Kovář</div>
+                        <div class="author-company">Tech Solutions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Připraveni začít s projektem?</h2>
+                <p>Kontaktujte nás a získejte zdarma konzultaci a nezávaznou cenovou nabídku.</p>
+                <a href="#contact" class="btn primary-btn">Kontaktujte nás</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontakt</h2>
+                <p>Jsme připraveni vám pomoci</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h3>Adresa</h3>
+                            <p>Lechova 690, 686 01 Uherské Hradiště</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h3>Telefon</h3>
+                            <p>+420 123 456 789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>info@flick.cz</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Váš email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefonní číslo">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Vyberte službu</option>
+                                <option value="cloud">Cloudové aplikace</option>
+                                <option value="video">Střih videí a reklam</option>
+                                <option value="web">Webové stránky</option>
+                                <option value="branding">Branding</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Vaše zpráva" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Odeslat zprávu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d462.11857933645115!2d17.470123108722955!3d49.065021939378845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47131448ae70abf7%3A0x9240f0d4c6ae!2sLechova%20690%2C%20686%2001%20Uherské%20Hradiště%201!5e0!3m2!1scs!2scz!4v1741180472523!5m2!1scs!2scz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <footer>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d462.11857933645115!2d17.470123108722955!3d49.065021939378845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47131448ae70abf7%3A0x9240f0d4c6ae!2sLechova%20690%2C%20686%2001%20Uherské%20Hradiště%201!5e0!3m2!1scs!2scz!4v1741180472523!5m2!1scs!2scz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <script>
-        const themeSwitch = document.querySelector('.theme-switch');
-
-        themeSwitch.addEventListener('click', () => {
-
-            //když má tlačítko třídu dark, tak ji odebereme a naopak
-            if (themeSwitch.classList.contains('dark')) {
-
-                themeSwitch.classList.remove('dark');
-                document.body.classList.remove('dark-theme');
-
-            } else {
-
-                themeSwitch.classList.add('dark');
-                document.body.classList.add('dark-theme');
-
-            }
-
-        });
-
-</script>
-        <p>&copy; 2025 Flick</p>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flick. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
