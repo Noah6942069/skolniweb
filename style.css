@@ -375,7 +375,7 @@ nav {
     box-shadow: var(--shadow);
 }
 
-/* Process Section */
+
 .process {
     padding: 80px 0;
     background: var(--white);
@@ -426,7 +426,7 @@ nav {
     border-radius: 50%;
     margin: 0 auto 20px;
     font-size: 30px;
-    color: #;
+    color: #14213D;
 }
 
 .process-step h3 {
@@ -452,8 +452,14 @@ nav {
 
 }
 
-footer-bottom{
+footer-bottom { 
 text-align: center;
 align-content: center;
 
+}
+
+@media (max-width: 992px) {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
